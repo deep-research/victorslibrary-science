@@ -1,0 +1,25 @@
+<!-- Gridsome Pagination without Search -->
+<div
+    v-for="item in $page.posts.edges"
+    :key="item.node.id"
+    class="blog-post"
+>
+    <div class="media my-5">
+    <!-- <g-image immediate :src="item.node.image" class="mr-3" alt="image" /> -->
+    <div class="media-body">
+        <g-link :to="item.node.path">
+        <h4 class="mt-0">{{item.node.title}}</h4>
+        </g-link>
+        <p class="text-dark mb-2" style="font-weight: 500">By {{item.node.author}} - {{item.node.date | luxon}}</p>
+        <p class="text-dark">{{item.node.excerpt}}</p>
+    </div>
+    </div>
+</div>
+
+<Pager :info="$page.posts.pageInfo"
+    class="pager-container"
+    linkClass="pager-container__link"  />
+
+# Page Query
+# query ($page: Int) {
+	# posts: allArticle(sortBy: "date", perPage: 3, page: $page) @paginate {
