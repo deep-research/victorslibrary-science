@@ -62,7 +62,7 @@
 
         <div style="margin-bottom: 16px;">
           <vue-recaptcha
-            sitekey="6Ldk9nUaAAAAAHhS05g7v7mOV05VVG0NqrUrByHQ"
+            sitekey="6LedCfgZAAAAAG4kM-xeTLM4HERd8MIPs5Gwl_4d"
             type="checkbox"
             :loadRecaptchaScript="true"
             @verify="onVerify">
