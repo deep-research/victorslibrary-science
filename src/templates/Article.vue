@@ -68,7 +68,7 @@
         The link has been copied.
       </b-alert>
 
-      <Disqus shortname="liquid-crystal-membrane" :identifier="$page.post.title" class="mt-5" />
+      <Disqus shortname="victorslibrary" :identifier="$page.post.title" class="mt-5" />
     </article>
   </Layout>
 </template>
