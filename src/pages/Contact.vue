@@ -157,7 +157,7 @@
       },
       handleSubmit(e) {
         if (this.validate()) {
-          fetch('https://script.google.com/macros/s/AKfycbwBg8PJZmY9NZJidWUzncHMhixYi2L4p6HiYOBFX8rzygd5SiL4-f86eMdPJ9P1q3AY7g/exec', {
+          fetch('https://script.google.com/macros/s/AKfycbxOVSR7eIYiKDTR1xPXV-ArJjHSGji1CTiHkvhfY7dRhRAN1VqiHWSN9w8unXA7-dNO/exec', {
             method: 'POST',
             headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
             body: this.encode({
